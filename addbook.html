@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book | Book Management System</title>
+    <link rel="stylesheet" href="style_book.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 Book Management System</h1>
+
+        <nav>
+            <ul>
+                <li><a href="indexbook.html">Home</a></li>
+                <li><a href="addbook.html" class="active">Add Book</a></li>
+                <li><a href="book.html">View Books</a></li>
+                <li><a href="contact_book.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="form-section">
+
+        <h2>Add a New Book</h2>
+
+        <p>
+            Enter the details of the new book to add it to the library.
+        </p>
+
+        <form>
+
+            <label>Book Title</label>
+            <input type="text" placeholder="Enter Book Title" required>
+
+            <label>Author Name</label>
+            <input type="text" placeholder="Enter Author Name" required>
+
+            <label>ISBN Number</label>
+            <input type="text" placeholder="Enter ISBN Number" required>
+
+            <label>Category</label>
+            <select required>
+                <option>Select Category</option>
+                <option>Programming</option>
+                <option>Science</option>
+                <option>Technology</option>
+                <option>Mathematics</option>
+                <option>Literature</option>
+                <option>History</option>
+            </select>
+
+            <label>Publication Year</label>
+            <input type="number" placeholder="Enter Publication Year">
+
+            <label>Book Status</label>
+
+            <div class="radio-group">
+                <input type="radio" name="status"> Available
+                <input type="radio" name="status"> Issued
+            </div>
+
+            <label>Description</label>
+            <textarea rows="5" placeholder="Write a short description about the book"></textarea>
+
+            <button type="submit" class="btn">
+                Add Book
+            </button>
+
+        </form>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Book Management System | Designed by Ayaan</p>
+    </footer>
+
+</body>
+</html>
